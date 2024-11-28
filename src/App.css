@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.input-field {
+  padding: 8px;
+  margin-right: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}

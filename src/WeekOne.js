@@ -1,8 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Hook to navigate programmatically
 import Button from '@mui/material/Button';
+import CRUD from "./CRUD"
 
-function Home() {
+function WeekOne({isMobile}) {
   const navigate = useNavigate(); // Hook for navigation
 
   const handleButtonClick = () => {
@@ -11,9 +12,10 @@ function Home() {
 
   return (
     <div>
-      <Button onClick={handleButtonClick}>Go Back to HomePage</Button>
+      <CRUD isMobile={isMobile}/>
+      <Button onClick={handleButtonClick} style={{marginTop: 50}}>Go Back to HomePage</Button>
     </div>
   );
 }
 
-export default Home;
+export default WeekOne;
