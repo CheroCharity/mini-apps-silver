@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Box  from '@mui/material/Box';
 import './App.css';
-import Header from "./Header";
-import Home from './Home';
-import WeekOne from './WeekOne';
+import Header from "./components/Header";
+import Home from './pages/Home';
+import WeekOne from './pages/WeekOne';
+import WeekTwo from './pages/WeekTwo';
 
 
 function App() {
@@ -37,10 +38,11 @@ function App() {
       }}
     >
         
-        <Router>
+    <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/week-one" element={<WeekOne isMobile={isMobile}/>} />
+        <Route path="/week-two" element={<WeekTwo isMobile={isMobile}/>} />
       </Routes>
     </Router>
      </Box>

@@ -1,19 +1,21 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Hook to navigate programmatically
 import Button from '@mui/material/Button';
+import DataList from '../components/DataList';
 
-function Home() {
+function WeekOne({isMobile}) {
   const navigate = useNavigate(); // Hook for navigation
 
   const handleButtonClick = () => {
-    navigate('/week-one'); // Navigate to /about when button is clicked
+    navigate('/'); // Navigate to /about when button is clicked
   };
 
   return (
     <div>
-      <Button onClick={handleButtonClick}>1. Week One</Button>
+      <DataList isMobile={isMobile}/>
+      <Button onClick={handleButtonClick} style={{marginTop: 50}}>Go Back to HomePage</Button>
     </div>
   );
 }
 
-export default Home;
+export default WeekOne;

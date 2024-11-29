@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Hook to navigate programmatically
 import Button from '@mui/material/Button';
-import CRUD from "./CRUD"
+import CRUD from "../components/CRUD"
 
 function WeekOne({isMobile}) {
   const navigate = useNavigate(); // Hook for navigation
